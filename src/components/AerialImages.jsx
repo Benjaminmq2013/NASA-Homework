@@ -4,26 +4,16 @@ import SetLatitude from "./SetLatitude"
 import SetLongitude from "./SetLongitude"
 import "../styles/AerialImages.css"
 
-const AerialImages = () => {  
-  
-  
-
-  
-
+const AerialImages = () => {
   return (
     <>
       <div className="input_coordinates">
-        
-      <SetLatitude />
-      <SetLongitude />
-        
-        
+        <SetLatitude />
+        <SetLongitude />
       </div>
       <div className="image_container">
         <GetData />
-        
       </div>
-
     </>
   );
 };
