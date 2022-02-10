@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { updateLatitude } from "../hooks/useGetImage"
+import { updateLatitude } from "./GetImage"
 
 
 
@@ -8,7 +8,7 @@ const setLatitude = () => {
     const latitudeInput = useRef(null)
     const HandleLatitude = () =>{
         setLatitude(latitudeInput.current.value)
-        updateLatitude(latitude)        
+        updateLatitude(latitude)       
     }
   return (
     <>

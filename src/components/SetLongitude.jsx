@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { updateLongitude } from "./GetImage"
 import "../styles/setCoordinates.css"
 
 const setLongitude = () => {
@@ -6,7 +7,7 @@ const setLongitude = () => {
     const [ longitude, setLongitude ] = useState("")
     const HandleLongitude = () =>{
         setLongitude(longitudeInput.current.value)
-        
+        updateLongitude(longitude)
     }
 
   return (
