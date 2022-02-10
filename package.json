@@ -1,0 +1,27 @@
+{
+  "name": "nasa-homework",
+  "version": "1.0.0",
+  "description": "Fetch images from any location in earth from NASA API using coordinates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjaminmq2013/NASA-Homework.git"
+  },
+  "keywords": [
+    "NASA",
+    "aerial",
+    "photography",
+    "Earth",
+    "NASA",
+    "API"
+  ],
+  "author": "Adriel Benjamín Martínez Quintanilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Benjaminmq2013/NASA-Homework/issues"
+  },
+  "homepage": "https://github.com/Benjaminmq2013/NASA-Homework#readme"
+}
