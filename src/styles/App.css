@@ -1,3 +1,12 @@
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9FAFB;
+}
+#root{
+    width: 38%;
+    margin: auto;
+}
 .container{
     display: flex;
     flex-direction: column;

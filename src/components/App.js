@@ -1,15 +1,15 @@
 import React from 'react'
-import EnterCoordinates from "./EnterCoordinates"
+
 import AerialImages from "./AerialImages"
+import Header from "./Header"
 import "../styles/App.css"
 
 const App = () => {
   return (
     <>
-      <h1>NASA-Homework!</h1>
+      <Header />
 
-      <div className="container">
-        <EnterCoordinates />
+      <div className="container">        
         <AerialImages />
       </div>
       
