@@ -29,7 +29,10 @@ const GetData = () => {
         setImage(img);
         console.log(image);
       })
-      .catch((response) => console.log(response));
+      .catch((response) => {
+        console.log(response)
+        alert("Make sure you are entering the coordinates manually with the keyboard, also delete any spaces after the coordinates")
+      });
   };
 
   return (
