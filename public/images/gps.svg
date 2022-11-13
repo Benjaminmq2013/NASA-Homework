@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="Group_7" data-name="Group 7" transform="translate(-4196 -453)">
+    <circle id="Ellipse_37" data-name="Ellipse 37" cx="2.5" cy="2.5" r="2.5" transform="translate(4202 459)" fill="#2974e6"/>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M6.5,13a6.548,6.548,0,0,1-1.31-.132,6.464,6.464,0,0,1-2.324-.978A6.519,6.519,0,0,1,.511,9.03,6.467,6.467,0,0,1,.132,7.81a6.563,6.563,0,0,1,0-2.62A6.464,6.464,0,0,1,1.11,2.866,6.519,6.519,0,0,1,3.97.511,6.467,6.467,0,0,1,5.19.132a6.563,6.563,0,0,1,2.62,0,6.464,6.464,0,0,1,2.324.978,6.519,6.519,0,0,1,2.355,2.86,6.467,6.467,0,0,1,.379,1.22,6.563,6.563,0,0,1,0,2.62,6.464,6.464,0,0,1-.978,2.324,6.519,6.519,0,0,1-2.86,2.355,6.467,6.467,0,0,1-1.22.379A6.548,6.548,0,0,1,6.5,13Zm0-11.365A4.865,4.865,0,1,0,11.365,6.5,4.871,4.871,0,0,0,6.5,1.635Z" transform="translate(4198 455)" fill="#2974e6"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="1" height="2" transform="translate(4204 468)" fill="#2974e6"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="1" height="2" transform="translate(4211 462) rotate(-90)" fill="#2974e6"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="1" height="2" transform="translate(4196 462) rotate(-90)" fill="#2974e6"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="1" height="2" transform="translate(4204 453)" fill="#2974e6"/>
+  </g>
+</svg>

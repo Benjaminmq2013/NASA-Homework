@@ -1,6 +1,8 @@
 import { useState } from "react"
-import { useFetchData } from "../hooks/useFetchData"
-import "../styles/AerialImages.css"
+import { fetchData } from "../api/fetchData"
+import getCurrentLocation from '../helpers/getCurrentLocation';
+import Input from "./input"
+import "../styles/index.css"
 
 export interface coordinatesProps{
     lon: number,
@@ -8,39 +10,38 @@ export interface coordinatesProps{
 }
 
 const index = () => {
-    
-    const [coordinates, setCoordinates] = useState<coordinatesProps>({} as coordinatesProps)    
-    const [image, setImage] = useState<string>("")
 
-    const { updateCoordinates } = useFetchData({ setImage })
-    
-
-    const handleLongitude = (e: React.ChangeEvent<HTMLInputElement>) => setCoordinates({ ...coordinates, lat: Number(e.target.value) })
-    const handleLatitude = (e: React.ChangeEvent<HTMLInputElement>) => setCoordinates({ ...coordinates, lon: Number(e.target.value) })
+    const [coordinates, setCoordinates] = useState<coordinatesProps>({ lat: 0, lon: 0 })  
+     
+    const [image, setImage] = useState<string>("images/landsat 8.png")
+  
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault() 
-        updateCoordinates(coordinates)
+        fetchData({ lat: coordinates.lat, lon: coordinates.lon, setImage})
     }
+    
+    const handleLocation = () => getCurrentLocation({ setCoordinates })
 
   return (
-    <>
-        <div className="input_coordinates">
+   
+    <div className="input_coordinates">
 
-            <form className="form" onSubmit={ handleSubmit } >
-                <input className="coordinate_input" type="text" placeholder="Longitude" onChange={ handleLongitude } value={ coordinates.lat } />
-                <input className="coordinate_input" type="text" placeholder="Latitude" onChange={ handleLatitude } value={ coordinates.lon } />
+        <form className="form" onSubmit={ handleSubmit } >
+            <Input label="Longitude" name="lon" setCoordinates={ setCoordinates } coordinates={coordinates} />
+            <Input label="Latitude" name="lat" setCoordinates={ setCoordinates } coordinates={coordinates} />
 
-                <input className="aerial_images_btn" type="submit" value={" Click To Search "} formAction="submit" />
-            </form>
+            <input className="aerial_images_btn" type="submit" value={" Click To Search "} formAction="submit" />
+        </form>
 
-            <div className="image_container">            
-                <img className="photo" src={ image } alt="Aerial Photograph" />
-            </div>
+        <span className="span" >Or</span>
+        <button className="gps-button" onClick={ handleLocation } > <img src="/images/gps.svg" alt="" /> Get my location</button>
+
+
+        <div className="image_container">            
+            <img className="photo" src={ image } alt="Aerial Photograph" />
         </div>
-    
-        
-    </>
+    </div>
   )
 }
 

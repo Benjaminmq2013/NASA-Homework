@@ -4,6 +4,9 @@
     align-items: center;
 }
 
+
+/* Button */
+
 .aerial_images_btn{
     width: 153px;
     height: 23px;
@@ -11,8 +14,8 @@
     border: 0;
     border-radius: 5px;
     color: #fefefe;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 31px;
+    margin-bottom: 16px;
     cursor: pointer;
     transition: .1s;
 }
@@ -20,6 +23,14 @@
 .aerial_images_btn:hover{
     background-color: #3796f5;
 }
+
+.aerial_images_btn:active{
+    background-color: #2674c3;
+    transform: scale(0.95);
+}
+
+
+/* image */
 
 .image_container{
     display: flex;
@@ -32,12 +43,14 @@
 }
 
 
+/* Inputs */
+
 .coordinate_input{
     border: 1px solid #ABADF6;
     border-radius: 5px;
     width: 203px;
     height: 23px;
-    margin-bottom: 13px;
+    margin-bottom: 4px;
     padding-left: 5px;
     outline: none;
     transition: .1s;
@@ -57,4 +70,32 @@
     align-items: center;
     gap: 5px;
     justify-content: center;
+}
+
+.gps-button{
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2974E6;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: .2s;    
+    font-weight: 600;
+}
+
+.span{
+    font-size: 16px;
+    font-weight: 600;
+    color: #929292;
+    margin-bottom: 16px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+
 }
