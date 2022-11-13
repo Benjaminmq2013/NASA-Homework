@@ -7,8 +7,18 @@ interface params{
 
 const getCurrentLocation = (params:params) => {    
 
-    navigator.geolocation.getCurrentPosition(({ coords }) => params.setCoordinates({ lat: coords.latitude, lon: coords.longitude }) )
-    console.log("getting location")
+    const handleSucess = (coords: GeolocationCoordinates) =>  params.setCoordinates({ lat: coords.latitude, lon: coords.longitude })
+    const handleError = (err: GeolocationPositionError) => console.log(err)
+    
+    const options = {
+        enableHighAccuracy: true,
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        (pos) => handleSucess(pos.coords), 
+        (err) => handleError(err),
+        options
+    )    
     
 }
 
