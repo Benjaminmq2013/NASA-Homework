@@ -1,6 +1,6 @@
-import React from 'react'
 import "../styles/Header.css"
-import NASA_logo from "../assets/NASA_Logo.svg"
+
+const NASA_logo: string = "/images/NASA_Logo.svg"
 
 const Header = () => {
   return (
@@ -9,11 +9,9 @@ const Header = () => {
         <div>
             <h1 className="title">Aerial Images From Earth</h1>
             <h2 className="subTitle">Enter Latitude and Longitude on each field</h2>
-            <h2 className="subTitle">Example: 13.70  -89.20</h2>
+            <h2 className="subTitle">Example: -89.20 13.70</h2>
         </div>
     </div>
-    
-    
   )
 }
 
